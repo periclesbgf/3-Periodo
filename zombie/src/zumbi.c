@@ -7,8 +7,8 @@ int main()
 	int pid = fork();
 
 	if (pid > 0){
-		sleep(11);
 		execlp("ps", "ps", "-l", (char *)NULL);
+		sleep(11);
 	}
 
 	else if (pid == 0){
